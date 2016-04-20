@@ -1,0 +1,53 @@
+.container {
+    box-sizing: border-box;
+    position: relative;
+    background-color: #eee;
+    padding: 20px;
+    border: 1px solid #999;
+    overflow: auto;
+}
+
+.child {
+    box-sizing: border-box;
+    border: 1px solid #999;
+    background-color: white;
+}
+
+#one {
+    float: left;
+    width: 200px;
+}
+
+#three {
+    float: right;
+    width: 120px;
+}
+
+#two {
+    padding: 20px;
+    margin-left: 220px;
+    margin-right: 140px;
+}
+
+img {
+    height: 80px;
+    width: 80px;
+}
+
+#one img {
+    float: left;
+    margin: 20px;
+}
+
+#three img {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#three img:last-child {
+    margin-bottom: 20px;
+}
+
+
+
