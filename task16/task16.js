@@ -9,6 +9,7 @@
  *    "上海": 40
  * };
  */
+
 var aqiData = {};
 
 /**
@@ -17,12 +18,39 @@ var aqiData = {};
  */
 function addAqiData() {
 
+
+    var city = document.getElementById('aqi-city-input').value;
+    var num = document.getElementById('aqi-value-input').value;
+    if (!num.match(/^\d+$/)) {
+        alert('空气质量指数需为整数')
+        return
+    }
+
+    if (!city.match(/[A-Za-z_\u4E00-\u9FA5\uF900-\uFA2D]/)) {
+        alert('城市名称需为中英文字符')
+        return
+    }
+    aqiData[city] = num;
 }
+
 
 /**
  * 渲染aqi-table表格
  */
 function renderAqiList() {
+    var table = document.getElementById('aqi-table');
+
+    if (table.rows.length == 0) {
+        var tr = document.createElement('tr');
+        tr.innerHTML = '<td>城市</td><td>空气质量</td><td>操作</td>';
+        table.appendChild(tr);
+    }
+    if (Object.keys(aqiData) && aqiData[Object.keys(aqiData)[0]]) {
+        var newDataTr = document.createElement('tr');
+        newDataTr.innerHTML = '<td>' + Object.keys(aqiData) + '</td>' + '<td>' + aqiData[Object.keys(aqiData)[0]] + '</td>' + '<td><button>删除</button></td>';
+        table.appendChild(newDataTr);
+    }
+
 
 }
 
@@ -31,8 +59,10 @@ function renderAqiList() {
  * 获取用户输入，更新数据，并进行页面呈现的更新
  */
 function addBtnHandle() {
+
     addAqiData();
     renderAqiList();
+    aqiData = {};
 }
 
 /**
@@ -42,6 +72,9 @@ function addBtnHandle() {
 function delBtnHandle() {
     // do sth.
 
+    console.log('aaa');
+    console.log(this);
+
     renderAqiList();
 }
 
@@ -49,7 +82,15 @@ function init() {
 
     // 在这下面给add-btn绑定一个点击事件，点击时触发addBtnHandle函数
 
+    document.getElementById('add-btn').onclick = addBtnHandle;
+
     // 想办法给aqi-table中的所有删除按钮绑定事件，触发delBtnHandle函数
+
+    var table = document.getElementById('aqi-table');
+
+    table.onclick=function (event) {
+        console.log(event)
+    }
 
 }
 
