@@ -26,7 +26,7 @@ function addAqiData() {
         return
     }
 
-    if (!city.match(/[A-Za-z_\u4E00-\u9FA5\uF900-\uFA2D]/)) {
+    if (!city.match(/^[A-Za-z\u4E00-\u9FA5\uF900-\uFA2D]+$/)) {
         alert('城市名称需为中英文字符')
         return
     }
@@ -41,8 +41,7 @@ function renderAqiList() {
     var table = document.getElementById('aqi-table');
 
     if (table.rows.length == 0) {
-        var tr = document.createElement('tr');
-        tr.innerHTML = '<td>城市</td><td>空气质量</td><td>操作</td>';
+        var tr = '<tr><td>城市</td><td>空气质量</td><td>操作</td></tr>';
         table.appendChild(tr);
     }
     if (Object.keys(aqiData) && aqiData[Object.keys(aqiData)[0]]) {
