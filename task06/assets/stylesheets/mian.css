@@ -1,0 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+====================
+Grid
+====================
+*/
+
+/*
+set box-sizing to border-box:
+if an element has a width of 400 pixels,
+a padding of 20 pixels around every side,
+and a border of 10 pixels around every side,
+the actual width will remain 400 pixels (margin will be added to calculate the full box size)
+*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    padding-left: 44px;
+    padding-right: 44px;
+    width: 980px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: '黑体';
+}
+
+/*
+=====================
+header
+=====================
+*/
+
+header h6 {
+    font-size: 12px;
+    color: #d45d5c;
+    padding-top: 45px;
+
+}
+
+header {
+    position: relative;
+}
+
+hr {
+    width: 892px;
+    height: 2px;
+    margin: 0 auto;
+}
+
+.head-icon-box h6 {
+    color: #fff;
+    padding-top: 45px;
+    padding-left: 8px;
+}
+
+.head-icon-box {
+    display: inline-block;
+    width: 110px;
+    height: 61px;
+    background-color: #d45d5c;
+}
+
+.head-end-text {
+    display: inline-block;
+    float: right;
+}
+
+/*
+=====================
+content
+=====================
+*/
+.img-container {
+    display: inline-block;
+    position: relative;
+}
+
+.img-container,
+.img-container img {
+    width: 641px;
+    height: 301px;
+}
+
+.img-container img {
+    position: absolute;
+}
+
+.img-shadow-one {
+    left: 0;
+    background-color: rgba(39, 105, 39, 0.42);
+}
+
+.img-shadow-two {
+    right: 0;
+    background-color: rgba(212, 93, 92, 0.32);
+}
+
+.img-shadow-one,
+.img-shadow-two {
+    position: absolute;
+    width: 191px;
+    height: 301px;
+
+}
+
+.right-side-one{
+    font-family: '微软雅黑';
+    display: inline-block;
+    width: 203px;
+    border-top: 2px solid #cc8091;
+    margin-left: 44px;
+    position: relative;
+}
+.about-technologe{
+    font-variant: small-caps;
+    line-height: 40px;
+    font-size: 24px;
+    color: #000;
+    text-decoration: underline;
+}
+
+.about-technologe-text{
+    font-size: 12px;
+    color: #676767;
+    font-family: '楷体';
+    line-height: 10px;
+    font-style: oblique;
+}
+.seven-hundred{
+    font-size: 116px;
+    color: #75b86b;
+    font-style: oblique;
+}
+.three-two{
+    float: left;
+    font-size: 55px;
+    color: #cc8091;
+
+}
+.css-css{
+
+    float: left;
+    font-size: 21px;
+    color: #cc8091;
+    position: absolute;
+    top: 230px;
+    left: 78px;
+}
+.csssssss{
+    font-size: 12px;
+    color: #676767;
+    position: absolute;
+    top: 250px;
+    left: 78px;
+}
