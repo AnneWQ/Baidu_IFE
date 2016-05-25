@@ -1,0 +1,484 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+====================
+Grid
+====================
+*/
+
+/*
+set box-sizing to border-box:
+if an element has a width of 400 pixels,
+a padding of 20 pixels around every side,
+and a border of 10 pixels around every side,
+the actual width will remain 400 pixels (margin will be added to calculate the full box size)
+*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    padding-left: 44px;
+    padding-right: 44px;
+    width: 980px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+body {
+    font-family: '黑体';
+    background-color: rgba(88, 161, 177, 0.13);
+    height: 1386px;
+}
+
+/*
+=====================
+header
+=====================
+*/
+
+header h6 {
+    font-size: 12px;
+    color: #d45d5c;
+    padding-top: 45px;
+
+}
+
+header {
+    position: relative;
+}
+
+hr {
+    width: 892px;
+    height: 2px;
+    margin: 0 auto;
+}
+
+.head-icon-box h6 {
+    color: #fff;
+    padding-top: 45px;
+    padding-left: 8px;
+}
+
+.head-icon-box {
+    display: inline-block;
+    width: 110px;
+    height: 61px;
+    background-color: #d45d5c;
+}
+
+.head-end-text {
+    display: inline-block;
+    float: right;
+}
+
+/*
+=====================
+content
+=====================
+*/
+.img-container {
+    display: inline-block;
+    position: relative;
+}
+
+.img-container,
+.img-container img {
+    width: 641px;
+    height: 301px;
+}
+
+.img-container img {
+    position: absolute;
+}
+
+.img-shadow-one {
+    left: 0;
+    background-color: rgba(39, 105, 39, 0.42);
+}
+
+.img-shadow-two {
+    right: 0;
+    background-color: rgba(212, 93, 92, 0.32);
+}
+
+.img-shadow-one,
+.img-shadow-two {
+    position: absolute;
+    width: 191px;
+    height: 301px;
+
+}
+
+.right-side-one{
+    font-family: '微软雅黑';
+    display: inline-block;
+    width: 203px;
+    border-top: 2px solid #cc8091;
+    margin-left: 44px;
+    position: relative;
+}
+.about-technologe{
+    font-variant: small-caps;
+    line-height: 40px;
+    font-size: 24px;
+    color: #000;
+    text-decoration: underline;
+}
+
+.about-technologe-text{
+    font: oblique 12px '楷体';
+    color: #676767;
+    line-height: 10px;
+}
+.seven-hundred{
+    font-size: 116px;
+    color: #75b86b;
+    font-style: oblique;
+    margin-top: 38px;
+}
+.three-two{
+
+    font-size: 55px;
+    color: #cc8091;
+
+}
+
+.css-css{
+
+
+    font-size: 21px;
+    color: #cc8091;
+    position: absolute;
+    top: 270px;
+    left: 78px;
+}
+.csssssss{
+    font-size: 12px;
+    color: #676767;
+    position: absolute;
+    top: 289px;
+    left: 78px;
+}
+
+.content-part-one{
+    padding-top: 50px;
+}
+
+.content-part-two{
+    padding-top: 30px;
+}
+
+.part-two-div-one{
+    display: inline-block;
+    width: 225px;
+}
+.part-two-div-one h3,
+.part-two-div-two h3,
+.part-two-div-three h3{
+    font: bold 16px '微软雅黑';
+    text-decoration: underline;
+}
+
+.part-two-div-one h3{
+    color: #418c59;
+}
+.part-two-div-two h3{
+    color: #d2994f;
+}
+.part-two-div-three h3{
+    color: #cc7680;
+}
+
+.part-two-div-one p{
+    font: 12px '宋体';
+    color: #767777;
+    line-height: 16px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.part-two-div-two{
+    display: inline-block;
+    width: 200px;
+    margin-left: 30px;
+}
+
+.part-two-div-two p{
+    font:12px/16px '微软雅黑';
+    color: rgba(35,24,21,0.7);
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.part-two-div-three{
+    display: inline-block;
+    width: 130px;
+    margin-left: 30px;
+}
+
+.part-two-div-three p{
+    font:12px/16px '微软雅黑';
+    color: rgba(35,24,21,0.7);
+    margin-top: 10px;
+    text-align: justify;
+}
+.part-two-div-three p span{
+    color: rgba(205,74,72,0.7);
+    font-style: oblique;
+}
+.div-three-p-one{
+    margin-bottom: 44px;
+}
+.content-part-three{
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.left-title{
+    font:oblique bold 72px '黑体';
+    color: #f5e327;
+
+}
+
+.left-second-title{
+    font:bold 42px/46px '黑体';
+    color: #11456b;
+}
+
+.part-three-left h2{
+    width: 415px;
+    font:bold 33px '黑体';
+    color: #11456b;
+    border-bottom: 2px solid #11456b;
+    padding-bottom: 15px;
+}
+
+.text-one{
+    padding-top: 30px;
+    padding-right: 7px;
+    font:12px/16px '宋体';
+    color: #767777;
+    text-align: justify;
+}
+
+.text-one:first-letter{
+    font:70px/70px '微软雅黑';
+    color: #f5e327;
+    float: left;
+}
+
+.part-three-left{
+    width: 420px;
+   float: left;
+}
+.part-three-left img{
+    float: right;
+    margin: 1em 0 1em 1em;
+}
+
+.text-two,
+.text-three{
+    color: #767777;
+    font:12px/16px '宋体';
+    text-indent:24px;
+    text-align: justify;
+}
+
+.part-three-right{
+    position: relative;
+    width: 460px;
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.part-three-right img{
+    width: 458px;
+    height: 275px;
+}
+
+.img-label{
+    position: absolute;
+    top:214px;
+    width: 458px;
+    height: 61px;
+    background-color: rgba(0, 0, 0, 0.42);
+    padding: 10px;
+}
+
+.right-content{
+
+    width: 459px;
+    height: 318px;
+    background-color: #eeeed6;
+    margin-top: 30px;
+}
+
+.label-one{
+    font: 26px '微软雅黑';
+    color: #fff;
+    border-left:3px solid #72b16a ;
+    height: 44px;
+    margin-left: 25px;
+    padding: 8px;
+}
+
+.label-two{
+    font:oblique 12px/140% '微软雅黑';
+    color: #72b16a;
+}
+ul{
+    font: 16px/20px '宋体';
+    padding: 10px;
+}
+ul li{
+    background:url("/task06/assets/images/triangle.png") 0 50% no-repeat;
+    list-style-type: none;
+    padding-left: 12px;
+    color: #5a5b5b;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.part-three-right-div{
+    width: 459px;
+    height: 318px;
+    background-color: #eeeed6;
+    position: relative;
+margin-top: 40px;
+}
+
+.o-text{
+    font:110px '微软雅黑';
+
+    border-right: 2px solid #fff;
+    height: 86px;
+    margin: 41px 10px;
+    line-height: 90px;
+    padding: 0 5px;
+}
+
+.number-box{
+    height: 160px;
+    width: 260px;
+    background-color: #d45d5c;
+    position: relative;
+    color: #fff;
+    margin-top: 18px;
+}
+.number-box p{
+    display: inline-block;
+}
+.number-child-one,
+.number-child-two{
+    position: absolute;
+}
+
+.number-child-one{
+    font: oblique 21px/24px '黑体';
+    top:45px;
+
+}
+.number-child-two{
+ font: 12px/16px '黑体';
+    margin-right: 10px;
+    top: 95px;
+}
+
+.left-bracket,
+.right-bracket{
+    font:72px '黑体';
+    color: #d45d5c;
+    position: absolute;
+}
+
+.left-bracket{
+    right: 150px;
+    top: 160px;
+}
+.right-bracket{
+right: 20px;
+    top:220px;
+}
+
+
+.bracket-content{
+    font:oblique 14px/16px '黑体';
+    color: #5a5b5b;
+    text-align: justify;
+    text-indent: 2.5em;
+    width: 160px;
+    position: absolute;
+    right: 20px;
+    top: 180px;
+}
+
+footer p{
+    width: 892px;
+    border-top: 1px solid #938e8c;
+    text-align: right;
+    font: 12px '黑体';
+    color: #d45d5c;
+
+}
+.right-image{
+    margin-top: 30px;
+}
