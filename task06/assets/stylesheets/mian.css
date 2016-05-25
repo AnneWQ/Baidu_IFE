@@ -316,7 +316,6 @@ content
     padding-right: 7px;
     font:12px/16px '宋体';
     color: #767777;
-
     text-align: justify;
 }
 
@@ -354,6 +353,15 @@ content
     height: 275px;
 }
 
+.img-label{
+    position: absolute;
+    top:214px;
+    width: 458px;
+    height: 61px;
+    background-color: rgba(0, 0, 0, 0.42);
+    padding: 10px;
+}
+
 .right-content{
 
     width: 459px;
@@ -362,16 +370,20 @@ content
     margin-top: 30px;
 }
 
-.right-title-one{
-    position: absolute;
-    top: 20px;
-    width: 458px;
-    height: 61px;
+.label-one{
     font: 26px '微软雅黑';
-    color: #000;
+    color: #fff;
+    border-left:3px solid #72b16a ;
+    height: 44px;
+    margin-left: 25px;
+    padding: 8px;
+}
+
+.label-two{
+    font:oblique 12px/140% '微软雅黑';
+    color: #72b16a;
 }
 ul{
-    background-color: #eeeed6;
     font: 16px/20px '宋体';
 }
 ul li{
@@ -383,6 +395,76 @@ ul li{
     margin-top: 20px;
 }
 
-.o-text{
+.part-three-right-div{
+    width: 459px;
+    height: 318px;
+    background-color: #eeeed6;
+    position: relative;
+    
+}
 
+.o-text{
+    font:110px '微软雅黑';
+
+    border-right: 2px solid #fff;
+    height: 86px;
+    margin: 41px 10px;
+    line-height: 90px;
+    padding: 0 5px;
+}
+
+.number-box{
+    height: 160px;
+    width: 260px;
+    background-color: #d45d5c;
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    margin-top: 57px;
+}
+.number-box p{
+    display: inline-block;
+}
+.number-child-one,
+.number-child-two{
+    position: absolute;
+}
+
+.number-child-one{
+    font: oblique 21px/24px '黑体';
+    top:45px;
+
+}
+.number-child-two{
+ font: 12px/16px '黑体';
+    margin-right: 10px;
+    top: 95px;
+}
+
+.left-bracket,
+.right-bracket{
+    font:72px '黑体';
+    color: #d45d5c;
+    position: absolute;
+}
+
+.left-bracket{
+    right: 150px;
+    top: 160px;
+}
+.right-bracket{
+right: 20px;
+    top:220px;
+}
+
+
+.bracket-content{
+    font:oblique 14px/16px '黑体';
+    color: #5a5b5b;
+    text-align: justify;
+    text-indent: 2.5em;
+    width: 160px;
+    position: absolute;
+    right: 20px;
+    top: 180px;
 }
