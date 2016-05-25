@@ -290,6 +290,7 @@ content
 }
 .content-part-three{
     padding-top: 50px;
+    padding-bottom: 40px;
 }
 
 .left-title{
@@ -327,7 +328,7 @@ content
 
 .part-three-left{
     width: 420px;
-    display: inline-block;
+   float: left;
 }
 .part-three-left img{
     float: right;
@@ -346,6 +347,7 @@ content
     position: relative;
     width: 460px;
     display: inline-block;
+    margin-left: 12px;
 }
 
 .part-three-right img{
@@ -401,7 +403,7 @@ ul li{
     height: 318px;
     background-color: #eeeed6;
     position: relative;
-
+margin-top: 40px;
 }
 
 .o-text{
@@ -467,4 +469,16 @@ right: 20px;
     position: absolute;
     right: 20px;
     top: 180px;
+}
+
+footer p{
+    width: 892px;
+    border-top: 1px solid #938e8c;
+    text-align: right;
+    font: 12px '黑体';
+    color: #d45d5c;
+
+}
+.right-image{
+    margin-top: 30px;
 }
