@@ -43,11 +43,7 @@ table {
 }
 
 
-/*
-===================
-common
-===================
-*/
+/*===================common===================*/
 
 
 *,
@@ -57,7 +53,9 @@ common
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
+body{
+    font:300 16px/22px "Lato","Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .container{
     padding-left: 30px;
     padding-right: 30px;
@@ -70,13 +68,11 @@ common
 }
 
 
-/*
-===================
-header
-===================
-*/
+/*===================header===================*/
 
-
+.header{
+    padding:15px 90px 20px 90px;
+}
 header{
     text-align: end;
 }
@@ -84,13 +80,188 @@ header{
 header h1{
     float: left;
     font-size: 22px;
+    padding: 3px 0 0 10px;
 }
 
 header li{
     display: inline-block;
+    font-size: 14px;
+    margin-left: 40px;
+    color: #7E7E80;
+}
+header a{
+    cursor: pointer;
 }
 
+header li:last-child{
+    background: url('../imgs/header_2.jpg') 0 45% no-repeat;
+}
+
+
+header li:last-child a{
+    margin-left: 20px;
+    color: #E65153;
+}
+header img{
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+/*===================part one===================*/
+.p-one{
+    position: relative;
+}
 .p-one img{
     width: 1280px;
     height: 690px;
+    float: left;
+    margin-bottom: 45px;
+}
+
+
+.p-one h1,
+.p-one h3,
+.p-one button{
+    position: absolute;
+    left: 150px;
+    color: #fff;
+}
+.p-one div{
+    width: 1280px;
+    height: 690px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    background-color: rgba(99, 71, 71, 0.36);
+}
+.p-one h1{
+    top: 250px;
+    font-size: 60px;
+font-weight: 300;
+}
+.p-one h3{
+    top:307px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 100;
+}
+.p-one button{
+    top: 429px;
+    font-size: 32px;
+    padding: 12px 95px;
+    font-weight: 100;
+    background-color: #E65153;
+    border: none;
+}
+/*===================part two===================*/
+
+
+.p-two{
+    margin-bottom: 70px;
+}
+.p-two div{
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+}
+.p-two p{
+    padding: 0 85px 15px 85px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #7C7C7C;
+    border-right: 1px solid #7C7C7C;
+}
+.p-two img{
+    margin-bottom: 34px;
+    width: 42px;
+    height: 42px;
+}
+
+/*===================part three===================*/
+.three-one{
+    text-align: center;
+    background-color: rgb(237, 237, 237);
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+.three-one img{
+    margin-bottom: 55px;
+}
+.three-one p{
+    font-size: 48px;
+    letter-spacing: 2px;
+    color: rgb(161, 161, 161);
+    font-weight: 400;
+}
+
+
+.three-two{
+    position: relative;
+    text-align: center;
+}
+
+.three-two-text{
+    position: absolute;
+    height: 341px;
+    width: 1280px;
+    background-color: rgba(230, 81, 83, 0.14);
+}
+
+.map{
+    float: left;
+    width: 1280px;
+    height: 341px;
+}
+.three-two button{
+    display: inline-block;
+    width: 25%;
+}
+
+.three-two h3,
+.three-two p{
+    position: absolute;
+    color: #fff;
+    font-weight: 100;
+}
+
+.three-two h3{
+    font-size: 20px;
+    top: 60px;
+    left: 40%;
+}
+
+.three-two p{
+    font-size: 12px;
+    top: 105px;
+    left: 36%;
+}
+.select-area{
+    position: absolute;
+    width: 1280px;
+    top: 170px;
+}
+
+.dropdown,
+.area-button{
+    position: relative;
+    display: inline-block;
+    width: 25%;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.select-area-child img{
+    background-color: #E65153;
+    background-size: 35px;
+}
+.select-area-child input{
+    height: 35px;
+    width: 236px;
 }
