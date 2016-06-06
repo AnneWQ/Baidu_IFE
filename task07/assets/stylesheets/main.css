@@ -274,12 +274,33 @@ select::-ms-expand{
 .p-four{
     clear: both;
 }
+
+.p-four-one{
+    width: 1280px;
+    background-color: rgb(237, 237, 237);
+}
 .p-four div{
     display: inline-block;
-    padding: 100px 15px;
+    padding: 55px 15px;
 }
 
 .p-four img{
     padding: 12px 8px;
     border: 1px solid rgba(68, 68, 68, 0.22);
+    background-color: #fff;
+}
+.p-four-one p{
+    text-align: center;
+}
+.p-four-txt1{
+    font-size: 14px;
+}
+.p-four-txt2{
+    font-size: 12px;
+    font-weight: 200;
+    color: rgb(161, 161, 161);
+}
+.p-four-txt3{
+    font-size: 22px;
+    letter-spacing: 35px;
 }
