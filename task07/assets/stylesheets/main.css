@@ -340,3 +340,27 @@ select::-ms-expand{
     font-size: 22px;
     margin-top: 20px;
 }
+
+.p-five-p2{
+    background: #f7f7f7;
+    height: 566px;
+    width: 430px;
+}
+.p-five-p2 p{
+    text-align: center;
+}
+.p-five-p2-1{
+    font-size: 20px;
+    margin-top: 160px;
+}
+.p-five-p2-2{
+    font-size: 12px;
+    margin-top: 25px;
+}
+.p-five-p2-3{
+    display: block;
+    margin-left: 180px;
+}
+.p-five-p2-4{
+
+}
