@@ -302,5 +302,41 @@ select::-ms-expand{
 }
 .p-four-txt3{
     font-size: 22px;
-    letter-spacing: 35px;
+    letter-spacing: 44px;
+}
+.p-four-txt3plus{
+    font-size: 22px;
+}
+
+.p-five-p1,
+.p-five-p2{
+    float: left;
+}
+
+.p-five-p1{
+    background: url("../imgs/middle-left.jpg") no-repeat #fff;
+    height: 566px;
+    width: 850px;
+}
+
+.p-five-p1 p{
+    color: #fff;
+    text-align: center;
+}
+.p-five-p1-1{
+    font-size: 48px;
+    margin-top: 145px;
+}
+.p-five-p1-2{
+    font-size: 170px;
+    margin-top: 70px;
+    font-weight: 400;
+}
+.p-five-p1-3{
+    font-size: 22px;
+    margin-top: 90px;
+}
+.p-five-p1-4{
+    font-size: 22px;
+    margin-top: 20px;
 }
