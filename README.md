@@ -14,3 +14,5 @@ Tasks of Baidu IFE
 [Task14:零基础JavaScript编码（二）] (http://annewq.github.io/Baidu_IFE/task14/task14.html)
 
 [Task15:零基础JavaScript编码（三）] (http://annewq.github.io/Baidu_IFE/task15/task15.html)
+
+[Task16:零基础JavaScript编码（四）] (http://annewq.github.io/Baidu_IFE/task16/task16.html)
