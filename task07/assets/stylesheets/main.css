@@ -1,0 +1,366 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*===================common===================*/
+
+
+*,
+*:before,
+*:after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font:300 16px/22px "Lato","Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #F7F7F7;
+}
+.container{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.container{
+    width: 1340px;
+    margin: 0 auto;
+}
+
+
+/*===================header===================*/
+
+.header{
+    padding:15px 90px 20px 90px;
+}
+header{
+    text-align: end;
+}
+
+header h1{
+    float: left;
+    font-size: 22px;
+    padding: 3px 0 0 10px;
+}
+
+header li{
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 40px;
+    color: #7E7E80;
+}
+header a{
+    cursor: pointer;
+}
+
+header li:last-child{
+    background: url('../imgs/header_2.jpg') 0 45% no-repeat;
+}
+
+
+header li:last-child a{
+    margin-left: 20px;
+    color: #E65153;
+}
+header img{
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+/*===================part one===================*/
+.p-one{
+    position: relative;
+}
+.p-one img{
+    width: 1280px;
+    height: 690px;
+    float: left;
+    margin-bottom: 45px;
+}
+
+
+.p-one h1,
+.p-one h3,
+.p-one button{
+    position: absolute;
+    left: 150px;
+    color: #fff;
+}
+.p-one div{
+    width: 1280px;
+    height: 690px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    background-color: rgba(99, 71, 71, 0.36);
+}
+.p-one h1{
+    top: 250px;
+    font-size: 60px;
+font-weight: 300;
+}
+.p-one h3{
+    top:307px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 100;
+}
+.p-one button{
+    top: 429px;
+    font-size: 32px;
+    padding: 12px 95px;
+    font-weight: 100;
+    background-color: #E65153;
+    border: none;
+}
+/*===================part two===================*/
+
+
+.p-two{
+    margin-bottom: 70px;
+}
+.p-two div{
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+}
+.p-two p{
+    padding: 0 85px 15px 85px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #7C7C7C;
+    border-right: 1px solid #7C7C7C;
+}
+.p-two img{
+    margin-bottom: 34px;
+    width: 42px;
+    height: 42px;
+}
+
+/*===================part three===================*/
+.three-one{
+    text-align: center;
+    background-color: rgb(237, 237, 237);
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+.three-one img{
+    margin-bottom: 55px;
+}
+.three-one p{
+    font-size: 48px;
+    letter-spacing: 2px;
+    color: rgb(161, 161, 161);
+    font-weight: 400;
+}
+
+
+.three-two{
+    position: relative;
+    text-align: center;
+}
+
+.three-two-text{
+    position: absolute;
+    height: 341px;
+    width: 1280px;
+    background-color: rgba(230, 81, 83, 0.14);
+}
+
+.map{
+    float: left;
+    width: 1280px;
+    height: 341px;
+}
+.three-two button{
+    display: inline-block;
+    width: 25%;
+}
+
+.three-two h3,
+.three-two p{
+    position: absolute;
+    color: #fff;
+    font-weight: 100;
+}
+
+.three-two h3{
+    font-size: 20px;
+    top: 60px;
+    left: 40%;
+}
+
+.three-two p{
+    font-size: 12px;
+    top: 105px;
+    left: 36%;
+}
+.select-area{
+    position: absolute;
+    width: 1280px;
+    top: 170px;
+}
+.select-area button,
+select{
+    width: 18%;
+    height: 36px;
+    margin: 0 12px;
+}
+.select-area button{
+    background-color: #E65153;
+    font-size: 16px;
+    border:none;
+    color: #fff;
+}
+select{
+    -webkit-appearance: none;
+    background: url("../imgs/red-arrow.png") 200px no-repeat #fff;
+    padding: 0 5px;
+    border-radius: 0;
+}
+
+select::-ms-expand{
+    display: none;
+
+}
+
+.three-two-text span{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+}
+/*========================part four========================*/
+
+.p-four{
+    clear: both;
+}
+
+.p-four-one{
+    width: 1280px;
+    background-color: rgb(237, 237, 237);
+}
+.p-four div{
+    display: inline-block;
+    padding: 55px 15px;
+}
+
+.p-four img{
+    padding: 12px 8px;
+    border: 1px solid rgba(68, 68, 68, 0.22);
+    background-color: #fff;
+}
+.p-four-one p{
+    text-align: center;
+}
+.p-four-txt1{
+    font-size: 14px;
+}
+.p-four-txt2{
+    font-size: 12px;
+    font-weight: 200;
+    color: rgb(161, 161, 161);
+}
+.p-four-txt3{
+    font-size: 22px;
+    letter-spacing: 44px;
+}
+.p-four-txt3plus{
+    font-size: 22px;
+}
+
+.p-five-p1,
+.p-five-p2{
+    float: left;
+}
+
+.p-five-p1{
+    background: url("../imgs/middle-left.jpg") no-repeat #fff;
+    height: 566px;
+    width: 850px;
+}
+
+.p-five-p1 p{
+    color: #fff;
+    text-align: center;
+}
+.p-five-p1-1{
+    font-size: 48px;
+    margin-top: 145px;
+}
+.p-five-p1-2{
+    font-size: 170px;
+    margin-top: 70px;
+    font-weight: 400;
+}
+.p-five-p1-3{
+    font-size: 22px;
+    margin-top: 90px;
+}
+.p-five-p1-4{
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.p-five-p2{
+    background: #f7f7f7;
+    height: 566px;
+    width: 430px;
+}
+.p-five-p2 p{
+    text-align: center;
+}
+.p-five-p2-1{
+    font-size: 20px;
+    margin-top: 160px;
+}
+.p-five-p2-2{
+    font-size: 12px;
+    margin-top: 25px;
+}
+.p-five-p2-3{
+    display: block;
+    margin-left: 180px;
+}
+.p-five-p2-4{
+
+}
