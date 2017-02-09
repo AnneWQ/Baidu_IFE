@@ -24,7 +24,7 @@ function getDateStr(dat) {
 function randomBuildData(seed) {
     var returnData = {};
     var dat = new Date("2016-01-01");
-    var datStr = ''
+    var datStr = '';
     for (var i = 1; i < 92; i++) {
         datStr = getDateStr(dat);
         returnData[datStr] = Math.ceil(Math.random() * seed);
@@ -44,7 +44,6 @@ var aqiSourceData = {
     "厦门": randomBuildData(100),
     "沈阳": randomBuildData(500)
 };
-
 // 用于渲染图表的数据
 var chartData = {};
 
@@ -52,8 +51,8 @@ var chartData = {};
 var pageState = {
     nowSelectCity: -1,
     nowGraTime: "day"
-}
-
+};
+var select=document.getElementById('city-select');
 /**
  * 渲染图表
  */
@@ -79,8 +78,13 @@ function citySelectChange() {
     // 确定是否选项发生了变化
 
     // 设置对应数据
-
+    var currentCity=select.value;
+    chartData=aqiSourceData[currentCity];
+    console.log(chartData);
     // 调用图表渲染函数
+
+
+
 }
 
 /**
@@ -95,8 +99,18 @@ function initGraTimeForm() {
  */
 function initCitySelector() {
     // 读取aqiSourceData中的城市，然后设置id为city-select的下拉列表中的选项
-
+    var cities=Object.keys(aqiSourceData);
+    for(var i=0;i<cities.length;i++){
+        var option=document.createElement('option');
+        option.text=cities[i];
+        if(cities[i]!='北京'){
+            select.add(option)
+        }
+    }
     // 给select设置事件，当选项发生变化时调用函数citySelectChange
+    select.addEventListener('change',function () {
+        citySelectChange()
+    })
 
 }
 
